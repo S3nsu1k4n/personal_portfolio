@@ -1,15 +1,17 @@
 <div class="flex-row border-2 rounded-lg">
-  <div class="flex-1 bg-blue-100">
-    <img src=<%= project.img_url %> alt="screenshot of project">
+  <div class="flex-1 bg-blue-100 h-32">
+    <img src=<%= project.img_url %> alt="screenshot of project" class="h-full w-full rounded-t-lg">
   </div>
   <div class="flex-1">
-    <div class="flex">
-      <p class="flex-1"><%= project.name %></p>
-      <%= render 'github_logo' %>
-      <%= render 'live_logo', url: project.live_url %>
+    <div class="flex items-center ml-5 mr-5 mt-2">
+      <p class="flex-1 text-left font-medium text-lg"><%= project.name %></p>
+      <div class="flex-initial grid grid-cols-2 gap-2">
+        <%= render 'github_logo' %>
+        <%= render 'live_logo', url: project.live_url %>
+      </div>
     </div>
-    <div class="flex-1">
-      <p><%= project.description %></p>
+    <div class="flex-1 mt-2">
+      <p class="ml-5 mr-5 mb-10"><%= project.description %></p>
     </div>
   </div>
 </div>

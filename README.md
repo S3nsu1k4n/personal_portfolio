@@ -5,7 +5,13 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby 3.2.2
+
+* bundle install
+
+* rails tailwindcss:watch
+
+* rails db:create
 
 * System dependencies
 

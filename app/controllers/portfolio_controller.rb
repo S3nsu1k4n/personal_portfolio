@@ -13,7 +13,7 @@ class Owner
     @bio = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
     @github_url = 'https://www.github.com'
     @linkedin_url = 'https://www.linkedin.com'
-    @email = 'sascha@email.com'
+    @email = 'saschakoeppe@gmail.com'
     @photo_url = 'urltophoto.com'
     @gravatar_url = 'https://www.gravatar.com/avatar/ff3cf5f8a5d7dd392d73193e9635e497'
     @projects = 6.times.map { Project.new }
