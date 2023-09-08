@@ -1,0 +1,36 @@
+<main class="flex-row">
+  <header class="flex-1 flex border-2">
+    <div class="flex-1">
+      <h1 class="font-bold text-4xl"><%= @owner.name %></h1>
+      <img src=<%= @owner.gravatar_url %> alt="image_of_owner">
+    </div>
+    <div class="flex-1 flex-row border-2">
+      <h2 class="flex-1">About me</h2>
+      <p class="flex-1"><%= @owner.bio %></p>
+      <div class="flex-1 flex">
+        <%= render 'github_logo' %>
+        <%= render 'linkedin_logo' %>
+      </div>
+    </div>
+  </header>
+  
+  <main class="flex-1 border-2 border-green-600 p-5">
+    <h2>My work</h2>
+    <div class="grid gap-10 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4">
+      <% @owner.projects.each do |project| %>
+        <%= render 'card', project: project %>
+      <% end %>
+    </div>
+  </main>
+  
+  <footer class="flex-1 border-black bg-[#0891b2]">
+    <h2>Contact me</h2>
+    <p>Please get in touch if you think our work could be mutually beneficial!</p>
+    <p>Shinagawa</p>
+    <p><%= @owner.email %></p>
+      <div class="flex">
+        <%= render 'github_logo' %>
+        <%= render 'linkedin_logo' %>
+      </div>
+  </footer>
+</main>
