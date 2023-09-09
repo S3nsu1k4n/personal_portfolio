@@ -10,7 +10,7 @@ class Owner
   def initialize
     @name = 'Sascha Koeppe'
     @tagline = 'Software Engineer'
-    @bio = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.'
+    @bio = 'Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod '
     @github_url = 'https://www.github.com'
     @linkedin_url = 'https://www.linkedin.com'
     @email = 'saschakoeppe@gmail.com'
